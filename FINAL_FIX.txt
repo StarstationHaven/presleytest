@@ -1,0 +1,125 @@
+================================================================================
+PRESLEY EXCEL WEBSITE - FINAL FIX (PRODUCTION BUILD ONLY)
+================================================================================
+
+PROBLEM: The website is blank because GitHub is serving the source index.html 
+instead of the production dist/index.html.
+
+SOLUTION: Upload ONLY the production build files (from dist folder).
+
+================================================================================
+STEP 1: DELETE ALL FILES IN YOUR REPOSITORY
+================================================================================
+
+Go to: https://github.com/StarstationHaven/presley-excel-website
+
+For each file/folder, click on it and delete:
+1. Delete: index.html (the source one)
+2. Delete: package.json
+3. Delete: vite.config.js
+4. Delete: tailwind.config.js
+5. Delete: postcss.config.js
+6. Delete: src/ folder
+7. Delete: public/ folder
+8. Delete: dist/ folder (if it exists)
+9. Keep: README.md (optional)
+10. Keep: .gitignore (optional)
+
+After deletion, your repository should be almost empty.
+
+Commit message: "Clean repository"
+
+================================================================================
+STEP 2: UPLOAD ONLY THESE FILES
+================================================================================
+
+Upload ONLY these files from this package:
+
+✓ index.html (from dist folder - MOST IMPORTANT)
+✓ assets/ folder (with CSS and JS files)
+✓ README.md (optional)
+✓ .gitignore (optional)
+
+DO NOT upload:
+✗ package.json
+✗ vite.config.js
+✗ tailwind.config.js
+✗ postcss.config.js
+✗ src/ folder
+✗ public/ folder
+
+Steps:
+1. Go to your repository
+2. Click "Add file" → "Upload files"
+3. Drag and drop ONLY: index.html, assets/ folder, README.md, .gitignore
+4. Commit message: "Upload production build"
+
+================================================================================
+STEP 3: VERIFY GITHUB PAGES SETTINGS
+================================================================================
+
+1. Go to Settings → Pages
+2. Source: "Deploy from a branch"
+3. Branch: "main" (or "master")
+4. Folder: "/" (root)
+5. Click Save
+6. Wait 1-2 minutes
+
+================================================================================
+STEP 4: VIEW YOUR WEBSITE
+================================================================================
+
+Hard refresh: Ctrl+Shift+R (or Cmd+Shift+R on Mac)
+
+Your website: https://StarstationHaven.github.io/presley-excel-website/
+
+It should now show the full website with all content!
+
+================================================================================
+WHY THIS WORKS
+================================================================================
+
+The dist/index.html file contains:
+- Compiled HTML
+- Links to minified CSS in /assets/
+- Links to minified JavaScript in /assets/
+- All fonts and styling
+
+When GitHub serves this from the root, it can find the assets folder and 
+load everything correctly.
+
+================================================================================
+WHAT'S IN THIS PACKAGE
+================================================================================
+
+✓ index.html - Production HTML (compiled from React)
+✓ assets/ folder - Contains:
+  - index-BdCPdGlU.css (minified CSS)
+  - index-tWrS1CwM.js (minified JavaScript with React app)
+✓ README.md - Project documentation
+✓ .gitignore - Git ignore file
+
+================================================================================
+QUICK CHECKLIST
+================================================================================
+
+□ Delete all files from your repository
+□ Upload ONLY: index.html, assets/, README.md, .gitignore
+□ Verify GitHub Pages settings (Settings → Pages)
+□ Source: "Deploy from a branch"
+□ Branch: "main" or "master"
+□ Folder: "/" (root)
+□ Hard refresh your browser (Ctrl+Shift+R)
+□ Visit: https://StarstationHaven.github.io/presley-excel-website/
+□ Website should now display correctly!
+
+================================================================================
+
+If it still doesn't work:
+1. Hard refresh: Ctrl+Shift+R
+2. Clear cache: Ctrl+Shift+Delete
+3. Wait 2-3 minutes
+4. Refresh again
+5. Check browser console (F12) for errors
+
+Good luck! 🚀
